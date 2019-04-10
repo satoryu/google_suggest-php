@@ -12,8 +12,8 @@ class Client
         if (isset($options['client']))
             $this->client = $options['client'];
 
-        $this->home_language = @$options['home_language'] ?: 'en';
-        $this->region = @$options['region'];
+        $this->home_language = $options['home_language'] ?? 'en';
+        $this->region = $options['region'] ?? null;
     }
 
     public function getHomeLanguage()
