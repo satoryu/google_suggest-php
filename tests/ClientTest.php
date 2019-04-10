@@ -7,10 +7,11 @@ use PHPUnit\Framework\TestCase;
 
 class ClientTest extends TestCase
 {
-    public function testConstructor()
+    public function testConstructorDefault()
     {
-        $client = new Client();
+        $client = new Client;
 
-        $this->assertTrue(true);
+        $this->assertEquals($client->getHomeLanguage(), 'en');
+        $this->assertNull($client->getRegion());
     }
 }
