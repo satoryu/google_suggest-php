@@ -25,4 +25,10 @@ class Client
     {
         return $this->region;
     }
+
+    public function suggestFor($words)
+    {
+        // TODO: Implement here, this is fake implementation
+        return ['a', 'b'];
+    }
 }

@@ -25,4 +25,12 @@ class ClientTest extends TestCase
         $this->assertEquals($client->getHomeLanguage(), 'ja');
         $this->assertEquals($client->getRegion(), 'us');
     }
+
+    public function testReturnSuggestWordsForGivenOneWord()
+    {
+        $client = new Client;
+
+        $suggestions = $client->suggestFor('google');
+        $this->assertContainsOnly('string', $suggestions);
+    }
 }
