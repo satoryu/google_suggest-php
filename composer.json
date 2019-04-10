@@ -3,17 +3,33 @@
     "description": "This package provides a client to fetch suggest words to given phrases from Google",
     "type": "library",
     "version": "0.0.1",
-    "require": {
-        "guzzlehttp/guzzle": "^6.3"
-    },
-    "require-dev": {
-        "phpunit/phpunit": "^8.1"
-    },
     "license": "MIT",
     "authors": [
         {
             "name": "Tatsuya Sato",
             "email": "satoryu.1981@gmail.com"
         }
-    ]
+    ],
+    "require": {
+        "guzzlehttp/guzzle": "^6.3"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.1"
+    },
+    "autoload": {
+        "psr-4": {
+            "GoogleSuggest\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "GoogleSuggest\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": [
+            "@composer dump-autoload",
+            "phpunit"
+        ]
+    }
 }
