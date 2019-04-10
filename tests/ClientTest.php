@@ -14,4 +14,15 @@ class ClientTest extends TestCase
         $this->assertEquals($client->getHomeLanguage(), 'en');
         $this->assertNull($client->getRegion());
     }
+
+    public function testGiveOptionsToConstructor()
+    {
+        $client = new Client([
+            'home_language' => 'ja',
+            'region' => 'us'
+        ]);
+
+        $this->assertEquals($client->getHomeLanguage(), 'ja');
+        $this->assertEquals($client->getRegion(), 'us');
+    }
 }
