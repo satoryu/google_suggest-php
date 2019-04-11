@@ -1,0 +1,22 @@
+language: php
+php:
+  - 7.2
+  - 7.3
+  - nightly
+
+matrix:
+  allow_failures:
+    - php: nightly
+
+dist: xenial
+
+cache:
+  directories:
+    - vendor
+
+install: composer install
+
+script: composer test -- --testdox
+
+notifications:
+  email: false
