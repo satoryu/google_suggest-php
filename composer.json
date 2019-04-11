@@ -7,9 +7,16 @@
     "authors": [
         {
             "name": "Tatsuya Sato",
-            "email": "satoryu.1981@gmail.com"
+            "email": "satoryu.1981@gmail.com",
+            "homepage": "https://satoryu.github.io/",
+            "role": "Developer"
         }
     ],
+    "homepage": "https://github.com/satoryu/google_suggest-php",
+    "support": {
+        "issues": "https://github.com/satoryu/google_suggest-php/issues",
+        "source": "https://github.com/satoryu/google_suggest-php/"
+    },
     "require": {
         "php": "^7.2",
         "guzzlehttp/guzzle": "^6.3"
