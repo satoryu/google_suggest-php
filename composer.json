@@ -13,6 +13,7 @@
         }
     ],
     "homepage": "https://github.com/satoryu/google_suggest-php",
+    "readme": "README.md",
     "support": {
         "issues": "https://github.com/satoryu/google_suggest-php/issues",
         "source": "https://github.com/satoryu/google_suggest-php/"
